@@ -93,7 +93,7 @@
   talosctl apply config --insecure --nodes $DHCP_TALOS_W_03 --file w-03.yaml
   ```
 
-- configure `talosctl` to use a single worker node
+- configure `talosctl` to use a single control plane node
 
   ```bash
   export TALOSCONFIG=talosconfig
