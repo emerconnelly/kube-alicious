@@ -126,7 +126,7 @@
   kubectl get nodes
   ```
 
-- clean up all generated files
+- clean up generated files
 
   ```bash
   rm -rf talosconfig \
