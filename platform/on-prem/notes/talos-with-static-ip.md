@@ -120,9 +120,7 @@
   ```bash
   talosctl kubeconfig .
   export KUBECONFIG=kubeconfig
-  cat kubeconfig | grep 'server'
   sed -i 's/server:.*/server: https:\/\/172.21.0.50:6443/' kubeconfig
-  cat kubeconfig | grep 'server'
   kubectl get nodes
   ```
 
