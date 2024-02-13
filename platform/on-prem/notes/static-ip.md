@@ -18,29 +18,29 @@
 
 - set DHCP IPs of all nodes
 
-```bash
-# control plane nodes
-export DHCP_TALOS_CP_01="172.21.0.150"
-export DHCP_TALOS_CP_02="172.21.0.151"
-export DHCP_TALOS_CP_03="172.21.0.152"
-# worker nodes
-export DHCP_TALOS_W_01="172.21.0.153"
-export DHCP_TALOS_W_02="172.21.0.154"
-export DHCP_TALOS_W_03="172.21.0.155"
-```
+  ```bash
+  # control plane nodes
+  export DHCP_TALOS_CP_01="172.21.0.150"
+  export DHCP_TALOS_CP_02="172.21.0.151"
+  export DHCP_TALOS_CP_03="172.21.0.152"
+  # worker nodes
+  export DHCP_TALOS_W_01="172.21.0.153"
+  export DHCP_TALOS_W_02="172.21.0.154"
+  export DHCP_TALOS_W_03="172.21.0.155"
+  ```
 
 - set static IPs of all nodes
 
-```bash
-# control plane nodes
-export STATIC_TALOS_CP_01="172.21.0.30"
-export STATIC_TALOS_CP_02="172.21.0.31"
-export STATIC_TALOS_CP_03="172.21.0.32"
-# worker nodes
-export STATIC_TALOS_W_01="172.21.0.33"
-export STATIC_TALOS_W_02="172.21.0.34"
-export STATIC_TALOS_W_03="172.21.0.35"
-```
+  ```bash
+  # control plane nodes
+  export STATIC_TALOS_CP_01="172.21.0.30"
+  export STATIC_TALOS_CP_02="172.21.0.31"
+  export STATIC_TALOS_CP_03="172.21.0.32"
+  # worker nodes
+  export STATIC_TALOS_W_01="172.21.0.33"
+  export STATIC_TALOS_W_02="172.21.0.34"
+  export STATIC_TALOS_W_03="172.21.0.35"
+  ```
 
 - generate `controlplane.yaml` & `worker.yaml`
 
