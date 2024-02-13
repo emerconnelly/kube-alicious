@@ -93,12 +93,17 @@
   talosctl apply config --insecure --nodes $DHCP_TALOS_W_03 --file w-03.yaml
   ```
 
-- configure `talosctl` to use a single worker node & bootstrap etcd
+- configure `talosctl` to use a single worker node
 
   ```bash
   export TALOSCONFIG=talosconfig
   talosctl config endpoint $STATIC_TALOS_CP_01
   talosctl config node $STATIC_TALOS_CP_01
+  ```
+
+- bootstrap etcd (sutomatically bootstraps all nodes)
+
+  ```bash
   talosctl bootstrap
   ```
 
