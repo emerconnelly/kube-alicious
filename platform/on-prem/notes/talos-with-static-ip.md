@@ -102,7 +102,7 @@
   talosctl bootstrap
   ```
 
-- VIP should now be aviailable, update control plane endpoint
+- VIP should now be available, update the control plane endpoint on all nodes
 
   ```bash
   # patch control plane nodes
