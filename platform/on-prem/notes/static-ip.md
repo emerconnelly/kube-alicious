@@ -1,6 +1,6 @@
-# talos static IP
+# Talos w/ static IP
 
-## prerequisites
+## pre-requisites
 
 - 3 control plane & 3 worker nodes
   - 4 CPU
