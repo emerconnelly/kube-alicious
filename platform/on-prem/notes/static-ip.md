@@ -7,7 +7,12 @@
   - 4096 GiB RAM
   - 100 GiB disk
 - a DHCP server
-- DNS recors for each node and VIP
+- DNS records for each node and VIP
+  ```
+  172.21.0.30 talos-cp-01.emer.lab
+  172.21.0.33 talos-w-01.emer.lab
+  172.21.0.50 talos-vip.emer.lab
+  ```
 
 ## steps
 
@@ -37,7 +42,7 @@ export STATIC_TALOS_W_02="172.21.0.34"
 export STATIC_TALOS_W_03="172.21.0.35"
 ```
 
-- generate controlplane.yaml & worker.yaml
+- generate `controlplane.yaml` & `worker.yaml`
 
 ```bash
 talosctl gen config talos-cluster https://$DHCP_TALOS_CP_01:6443 \
@@ -46,7 +51,7 @@ talosctl gen config talos-cluster https://$DHCP_TALOS_CP_01:6443 \
   --config-patch-worker @patch/patch-w-all.yaml
 ```
 
-- patch controlplane.yaml & create cp-(01-03).yaml
+- patch `controlplane.yaml` & create `cp-[01-03].yaml`
 
 ```bash
 talosctl machineconfig patch controlplane.yaml \
@@ -60,7 +65,7 @@ talosctl machineconfig patch controlplane.yaml \
   --output cp-03.yaml
 ```
 
-- patch worker.yaml & create w-(01-03).yaml
+- patch `worker.yaml` & create `w-[01-03].yaml`
 
 ```bash
 talosctl machineconfig patch worker.yaml \
@@ -96,7 +101,7 @@ talosctl config node $STATIC_TALOS_CP_01
 talosctl bootstrap
 ```
 
-- change control plane to static
+- VIP should now be aviailable, update control plane endpoint
 
 ```bash
 # patch control plane nodes
