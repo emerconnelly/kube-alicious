@@ -9,12 +9,11 @@
 - a DHCP server
 - DNS records for each node and VIP
 
-
-  ```
-  172.21.0.30 talos-cp-01.emer.lab
-  172.21.0.33 talos-w-01.emer.lab
-  172.21.0.50 talos-vip.emer.lab
-  ```
+```
+172.21.0.30 talos-cp-01.emer.lab
+172.21.0.33 talos-w-01.emer.lab
+172.21.0.50 talos-vip.emer.lab
+```
 
 ## steps
 
