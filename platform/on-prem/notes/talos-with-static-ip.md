@@ -15,6 +15,9 @@
 172.21.0.50 talos-vip.emer.lab
 ```
 
+> [!NOTE]  
+> DHCP isn't required if a network profile is manually configured on all nodes via console.
+
 ## steps
 
 - set DHCP IPs of all nodes
