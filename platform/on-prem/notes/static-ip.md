@@ -126,6 +126,9 @@
   kubectl get nodes
   ```
 
+> [!WARNING]
+> Deleting `talosconfig` is irreversible - only proceed if tearing down cluster.
+
 - clean up generated files
 
   ```bash
