@@ -1,6 +1,6 @@
 # Kube-alicious
 
-Make them pods go loco.
+Definition: make them pods go loco.
 
 > [!NOTE]
 > All examples are biased toward my environments and budget.
